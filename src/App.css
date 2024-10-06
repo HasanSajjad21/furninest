@@ -43,7 +43,7 @@
 .hero {
   position: relative;
   height: 100vh;
-  background-image: url('../assets/hero-image.jpg');
+  background-image: url('./assets/hero-image.jpg'); /* Correct relative path */
   background-size: cover;
   background-position: center;
   display: flex;
