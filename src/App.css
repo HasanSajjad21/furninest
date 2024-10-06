@@ -1,130 +1,114 @@
-/* App.css */
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
 /* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  background-color: #333;
-  color: white;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 30px;
+}
+
+.nav-links li {
+  cursor: pointer;
 }
 
 .auth-buttons .btn {
   padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-}
-
-
-/* Hero Section */
-/* Hero Section */
-.hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 100px; /* Padding for spacing between the edge and the content */
-  background-color: #f0f0f0; /* Light background color */
-  height: 100vh; /* Full viewport height */
-  box-sizing: border-box;
-}
-
-.hero-content {
-  flex: 1; /* Take up half the space */
-  max-width: 50%; /* Ensure the content doesn't stretch too wide */
-  padding-right: 50px; /* More padding between text and image */
-}
-
-.hero-content h1 {
-  font-size: 4rem; /* Larger heading */
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.hero-content p {
-  font-size: 1.5rem; /* Slightly larger paragraph */
-  margin-bottom: 20px;
-  color: #555;
-}
-
-.hero-content .cta {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
+  margin-left: 10px;
   border: none;
   cursor: pointer;
 }
 
-.hero-image {
-  flex: 1; /* The image also takes half the space */
+.btn.cart {
+  background-color: transparent;
+}
+
+.btn.login {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url('../assets/hero-image.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
-  justify-content: flex-end; /* Align the image to the right */
+  align-items: center;
+  justify-content: center;
 }
 
-.hero-image img {
-  max-width: 100%; /* The image takes up the full width of its container */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Ensure it covers the container area */
-  border-radius: 10px; /* Optional: adds a smooth corner to the image */
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Adds a dark overlay */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-
-
-/* Features Section */
-.features {
-  padding: 50px;
+.hero-content {
   text-align: center;
+  color: white;
 }
 
-.feature-items {
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.cta {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* Product Showcase */
+.product-showcase {
+  position: absolute;
+  bottom: 20px;
   display: flex;
-  justify-content: space-around;
-}
-
-.feature-item {
-  width: 30%;
-}
-
-/* Products Section */
-.products {
-  padding: 50px;
-  text-align: center;
-}
-
-.product-cards {
-  display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 20px;
 }
 
 .product-card {
-  width: 20%;
-}
-
-/* Testimonials */
-.testimonials {
-  padding: 50px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.testimonials-container {
-  display: flex;
-  justify-content: space-around;
+.product-card img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
-/* Footer */
-.footer {
-  background-color: #333;
-  color: white;
-  padding: 20px;
-  text-align: center;
+.product-card p {
+  font-size: 1rem;
 }
