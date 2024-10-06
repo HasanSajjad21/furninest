@@ -13,7 +13,8 @@ const Navbar = () => {
         <li><Link to="contact" smooth={true}>Contact</Link></li>
       </ul>
       <div className="auth-buttons">
-        <button className="btn">Sign In</button>
+        <button className="btn cart">🛒</button>
+        <button className="btn login">Sign In</button>
       </div>
     </nav>
   );

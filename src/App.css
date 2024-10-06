@@ -26,22 +26,59 @@ body {
   color: white;
 }
 
+
+/* Hero Section */
 /* Hero Section */
 .hero {
   display: flex;
   justify-content: space-between;
-  padding: 100px;
-  background-color: #f0f0f0;
-  height: 100vh;
+  align-items: center;
+  padding: 0 100px; /* Padding for spacing between the edge and the content */
+  background-color: #f0f0f0; /* Light background color */
+  height: 100vh; /* Full viewport height */
+  box-sizing: border-box;
 }
 
 .hero-content {
-  max-width: 50%;
+  flex: 1; /* Take up half the space */
+  max-width: 50%; /* Ensure the content doesn't stretch too wide */
+  padding-right: 50px; /* More padding between text and image */
+}
+
+.hero-content h1 {
+  font-size: 4rem; /* Larger heading */
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hero-content p {
+  font-size: 1.5rem; /* Slightly larger paragraph */
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.hero-content .cta {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-image {
+  flex: 1; /* The image also takes half the space */
+  display: flex;
+  justify-content: flex-end; /* Align the image to the right */
 }
 
 .hero-image img {
-  max-width: 400px;
+  max-width: 100%; /* The image takes up the full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure it covers the container area */
+  border-radius: 10px; /* Optional: adds a smooth corner to the image */
 }
+
+
 
 /* Features Section */
 .features {
